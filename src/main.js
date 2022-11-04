@@ -1,30 +1,24 @@
 import Vue from 'vue'
-import router from '@router'
+// import router from '@router'
 import store from '@state/store'
-import App from './app.vue'
+import VueApexCharts from 'vue-apexcharts'
+import Vuex from 'vuex'
+import App from './App.vue'
+import router from './router'
 
 // Globally register all `_base`-prefixed components
-import '@components/_globals'
+// import '@components/_globals'
 
-// Don't warn about using the dev version of Vue in development.
-Vue.config.productionTip = process.env.NODE_ENV === 'production'
+Vue.use(Vuex)
 
-// If running inside Cypress...
-if (process.env.VUE_APP_TEST === 'e2e') {
-  // Ensure tests fail when Vue emits an error.
-  Vue.config.errorHandler = window.Cypress.cy.onUncaughtException
-}
+Vue.use(VueApexCharts)
 
-const app = new Vue({
-  router,
+Vue.component('apexchart', VueApexCharts)
+
+Vue.config.productionTip = false
+
+new Vue({
   store,
-  render: (h) => h(App),
+  router,
+  render: h => h(App),
 }).$mount('#app')
-
-// If running e2e tests...
-if (process.env.VUE_APP_TEST === 'e2e') {
-  // Attach the app to the window, which can be useful
-  // for manually setting state in Cypress commands
-  // such as `cy.logIn()`.
-  window.__app__ = app
-}

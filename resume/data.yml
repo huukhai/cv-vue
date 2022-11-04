@@ -1,0 +1,286 @@
+/* #*/ export const PERSON = `
+# Any fields left unchanged, please delete so your resume is fully yours!
+
+name:
+  first: Khải
+  middle:
+  last: Nguyễn Hữu
+  full: Nguyễn Hữu Khải
+about: My name is Khải, I have more than 12 years of experience in software development in many different languages,
+      currently, I am using NodeJS as the main development language. In addition, I also have some years of experience in management roles such as Team leader, Technical leader, Manager, Scrum master, and PM.
+position: JavaScript Full-stack Developer
+
+birth:
+  year: 1987
+  location: Yên Phong - Bắc Ninh
+
+# you may add more experiences by duplicating the template
+
+experience:
+- company: Foobla Company Limited.
+  position: Full-stack Developer, Team leader, PM
+  timeperiod: 11/2020 - Now
+  description:
+    - Participated in designing and developing software using agile development practices.
+    - Maintain and develop new features for the global POD Fulfillment platform.
+    - Lead team members to build the first POD fulfillment platform for the Vietnamese market.
+  website: https://merchize.com/
+
+- company: Tan Chong Systems Vietnam.
+  position: Full-stack Developer
+  timeperiod: 05/2019 - 10/2020
+  description: Participated in designing and developing software using agile development practices.
+
+- company: Alticast Vietnam (Altimedia).
+  position: Server Developer
+  timeperiod: 11/2017 - 05/2019
+  description:
+  - Build system architecture, and implement some services for the Automotive OTA System.
+
+- company: NAL Global Career.
+  position: Java Developer
+  timeperiod: 01/2016 - 10/2017
+  description:
+  - Participated in designing and developing software using agile development practices.
+
+- company: SMS Vietnam Company Limited.
+  position: Java Team Leader
+  timeperiod: 05/2014 - 12/2015
+  description:
+  - Participated in designing and developing software using agile development practices.
+
+- company: ATO Company Limited.
+  position: Deputy department manager of Software development
+  timeperiod: 01/2011 - 04/2014
+  description:
+  - Receive requirements from sellers and customers.
+  - Plan and assign tasks to team members.
+  - Report to the director weekly on the project.
+
+- company: CTO Company Limited.
+  position: ASP.Net Developer
+  timeperiod: 09/2009 - 12/2010
+  description:
+  - Building websites that customers order.
+  - Participate in analyzing, and building digital library systems for the Faculty of Information Technology - Thai Nguyen University.
+
+education:
+- degree: Bachelor of Science
+  timeperiod: 06/2005 - 06/2010
+  description: Major in Information Technology, Faculty of Information Technology - Thai Nguyen University - Thai Nguyen City.
+
+# skill level goes from 0 to 100
+skills:
+- name: Node.js
+  level: 99
+- name: JavaScript
+  level: 97
+- name: TypeScript
+  level: 80
+- name: ReactJS
+  level: 70
+- name: React Native
+  level: 60
+- name: Web3
+  level: 40
+- name: .Net (C# and VB.Net)
+  level: 95
+- name: Java
+  level: 93
+- name: Microservices
+  level: 99
+- name: MongoDB
+  level: 90
+- name: MySQL
+  level: 90
+- name: MSSQL
+  level: 90
+- name: PostgreSQL
+  level: 80
+- name: Docker
+  level: 70
+- name: K8S
+  level: 99
+- name: AWS
+  level: 60
+knowledge:
+- Knowledgeable of E-commerce, POD Fulfillment, HRM system, and medical business domain.
+- Passionate about learning new technologies.
+- Experience in building new complex projects from scratch.
+- Exceptional organizational and planning skills with team management.
+- Have experience with Agile Methodology and Scrum Framework.
+
+projects:
+- name: Crypto Wallet.
+  role: Developer
+  members: 4
+  platform: Web3, Polkadot, Chrome Extension (V2 & V3), TypeScript, JavaScript, ReactJS, IndexedDB
+  timeperiod: 07/2022 - Now
+  description: SubWallet is a user-friendly Web3 Multiverse Gateway for Polkadot and Kusama ecosystem.
+  contributions:
+  - Optimize and refactor system architecture to increase performance.
+  - Migrate the Extension to Chrome manifest version 3 from version 2.
+  - Add new features as requested by the Manager.
+  url: https://subwallet.app
+
+- name: POD Fulfillment Marketplace.
+  role: Technical PM
+  members: 5
+  platform: JavaScript, ExpressJS, MoleculerJS, Microservices, ReactJS, NextJS, MongoDB, NATS, Redis, Elasticsearch, K8S, AWS
+  timeperiod: 02/2022 - 06/2022
+  description: The first POD fulfillment Marketplace for the Vietnamese market.
+  type: Product
+  contributions:
+  - Build a high-performance system architecture that responds to large amounts of traffic, especially flash sales promotions.
+  - Participate with the Product Owner and BA to define features, find solutions, and create product roadmaps.
+  - Lead the team to implement the features using agile development practices.
+  url: https://tikme.vn
+
+- name: Global Dropship & POD Fulfillment Platform.
+  role: Full-stack JS Developer
+  members: 15
+  platform: JavaScript, ExpressJS, Microservices, ReactJS, NextJS, MongoDB, NATS, Redis, Kafka, RabbitMQ, Elasticsearch, K8S, AWS
+  timeperiod: 11/2021 - 02/2022
+  description: Merchize Platform is one of the first leading platforms built solely for Print-On-Demand & Dropshipping.
+  type: Product
+  contributions:
+  - Participate in the development of new features for the existing platform using agile development practices.
+  - Refactor and find solutions to improve performance for outdated features.
+  url: https://merchize.com
+
+- name: HR-AIMS - Human Resource Management System.
+  role: Full-stack JS Developer
+  members: 4
+  platform: NodeJS, ExpressJS, MoleculerJS, RestifyJS, Angular, MySQL
+  timeperiod: 05/2019 - 10/2021
+  description: Human resource management module for AIMS system of Tanchong group.
+  type: Product
+  contributions:
+  - Participate with the Project leader to implement business requirements from the corporation.
+  - Support other members in implementing the functions.
+  url: https://hr-aims.com/
+
+- name: Automotive OTA System.
+  role: Full-stack JS Developer
+  members: 3
+  platform: NodeJS, KoaJS, Mongoose
+  timeperiod: 11/2018 - 05/2019
+  description: OTA upgrade system for the modules in the automotive system.
+  type: Outsource
+  contributions:
+  - Build backend architecture for the system.
+  - Receive requirements from superiors and implement them.
+  url:
+
+- name: Equipment Asset Management System.
+  role: React Native Developer
+  members: 2
+  platform: Snipe-IT Open Source for Backend, React Native, Expo
+  timeperiod: 07/2018 - 10/2018
+  description: Equipment asset management system for factories and enterprises.
+  type: Product
+  contributions:
+  - Build mobile app connecting to open source backend system for managing equipment assets.
+  url:
+
+- name: Web-based Human Resource Management System.
+  role: Manager, Technical Leader
+  members: 5
+  platform: NodeJS, ExpressJS, MoleculerJS, ReactJS, Mongoose, C# (For the module to connect to timekeeper devices)
+  timeperiod: 11/2017 - 07/2018
+  description: Migrate and add new features for legacy winform applications to web-based applications.
+  type: Product
+  contributions:
+  - Responsible for recruiting and building a new team for the new department.
+  - Participate with other departments to survey, and get requirements for new features to meet the needs of the market.
+  - Lead the team to implement the new system using agile development practices.
+  url:
+
+- name: Outsourcing for Japanese customers.
+  role: Java Developer
+  members: 7
+  platform: Play Framework, Mybatis
+  timeperiod: 01/2016 - 10/2017
+  description: Implement features based on requests from Japanese customers.
+  type: Outsource
+  contributions:
+  - Participate in designing and developing software using agile development practices.
+  url:
+
+- name: Outsourcing for the Japanese parent company.
+  role: Java Team leader
+  members: 3
+  platform: Kamos Framework (Private framework)
+  timeperiod: 07/2014 - 12/2015
+  description: Implement features based on the request from the parent company using the Kamos framework.
+  type: Outsource
+  contributions:
+  - Responsible for the analysis and development of the projects with the role of team leader.
+  - Receive requirements and assign them to team members.
+  - Participate in designing and developing software using agile development practices.
+  url:
+
+- name: Nurse Human Resource Bank.
+  role: PHP Software Engineer
+  members: 6
+  platform: Ethna, Smarty
+  timeperiod: 05/2014 - 07/2014
+  description: Nurse recruitment system.
+  type: Product
+  contributions:
+  - Implement requirements to edit and add new features to the existing system.
+  url:
+
+- name: Human Resource Management System.
+  role: Deputy department manager of Software development
+  members: 6
+  platform: WinForms, VB.Net, C#, ATO Framework
+  timeperiod: 01/2011 - 04/2014
+  description: HRM system is one of many projects of the company, it helps the factories and enterprises manage human resources, timekeeping, and salary calculation.
+  type: Product
+  contributions:
+  - Working as the Project manager
+  - Receive requirements from sellers and customers.
+  - Plan and assign tasks to team members.
+  - Report to the director weekly on the project.
+  url:
+
+- name: Digital Library System.
+  role: ASP.Net Developer
+  members: 3
+  platform: ASP.Net C#, MSSQL
+  timeperiod: 09/2009 - 12/2010
+  description: Digital library system for Faculty of Information Technology - Thai Nguyen University.
+  type: Outsource
+  contributions:
+  - Get requirements from customers.
+  - Participate in system analysis and design.
+  - Implement assigned modules.
+  url:
+
+# optional, not all resume templates have hobbies included
+hobbies:
+- name: Video Games
+  iconClass: fa fa-gamepad
+  url: https://example.com
+
+- name: Drawing
+  iconClass: fa fa-pencil
+  url: https://example.com
+
+# contributions:
+# - name: SubWallet Extension
+#   description: SubWallet Extension is open source crypto wallet for Polkadot and Kusama ecosystem.
+#   url: https://github.com/Koniverse/SubWallet-Extension
+
+contact:
+  email: huukhai0510@gmail.com
+  phone: 0969.567.887
+  street: Thái Hà building - Phạm Văn Đồng - Cổ Nhuế 2 - Bắc Từ Liêm - Hà Nội
+  city: Hà Nội
+  website:
+  github: huukhai
+  skype: huukhai0510
+# en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
+lang: en
+`

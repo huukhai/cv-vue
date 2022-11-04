@@ -1,21 +1,31 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-import dispatchActionForAllModules from '@utils/dispatch-action-for-all-modules'
+import Vue from 'vue';
+import Vuex from 'vuex';
+import { getField, updateField } from 'vuex-map-fields';
 
-import modules from './modules'
+Vue.use(Vuex);
 
-Vue.use(Vuex)
+export default new Vuex.Store({
+    state: {
+        controlValue: {
+            showLayout: false,
+            floatLayout: false,
+            enableDownload: true,
+            previewModal: false,
+            paginateElementsByHeight: 1100,
+            manualPagination: true,
+            filename: 'nhk',
+            pdfQuality: 2,
+            pdfFormat: 'a4',
+            pdfOrientation: 'portrait',
+            pdfContentWidth: '800px'
+        }
+    },
 
-const store = new Vuex.Store({
-  modules,
-  // Enable strict mode in development to get a warning
-  // when mutating state outside of a mutation.
-  // https://vuex.vuejs.org/guide/strict.html
-  strict: process.env.NODE_ENV !== 'production',
+    mutations: {
+        updateField
+    },
+
+    getters: {
+        getField
+    },
 })
-
-export default store
-
-// Automatically run the `init` action for every module,
-// if one exists.
-dispatchActionForAllModules('init')
